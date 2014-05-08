@@ -142,7 +142,7 @@ ___
 ### Localization
 It is possible to use different localization with the same headers and/or footers but __not required__.  
 If you want to support only one language then you should "hardcode" the content of the header or footer to the representing json and it should work perfectly. In that case you do not have to use the placeholders object (see [stucture](#structure)).  
-If you want to support more than one language, then you have to use the placeholders object. You should not write the actual content to the json instead you should use a placeholder. You can give any kind of name to this placeholder, but it should begin and end with two '#' character (for example: ##title##). After that yous have to insert the placeholder to the placeholders object as follows: the key should be the name of the placeholder , and the value should be an object conatining the language code - value pairs of the actual content.  
+If you want to support more than one language, then you have to use the placeholders object. You should not write the actual content to the json instead you should use a placeholder (If you have a title element in your header or footer, then the text of the title should be the placeholder instead of the actual content. We will replace the placeholders in our application). You can give any kind of name to this placeholder, but it should begin and end with two '#' character (for example: ##title##). After that yous have to insert the placeholder to the placeholders object as follows: the key should be the name of the placeholder , and the value should be an object conatining the language code - value pairs of the actual content.  
 Example placeholders object: 
 
 	placeholders: { '##title##': {
